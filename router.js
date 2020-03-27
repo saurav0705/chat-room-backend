@@ -7,6 +7,6 @@ router.get("/", (req, res) => {
 router.get("/users",(req,res)=>{
   res.statusCode = 200;
   res.setHeader('Content-type','application/json');
-  res.json(getAll());
+  res.json({"users":getAll()});
 })
 module.exports = router;
