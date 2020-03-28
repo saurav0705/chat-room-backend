@@ -29,7 +29,7 @@ const getAll = () =>  users;
 
 const getRooms = () => {
 
-    return  new Set(users.map(({room}) => {room} ))
+    return [...new Set(users.map(({room}) => room ))]
 
     
 
