@@ -27,4 +27,13 @@ const getUsersInRoom = (room) => users.filter((user) => user.room === room);
 
 const getAll = () =>  users;
 
-module.exports = { addUser, removeUser ,getUser ,getUsersInRoom ,getAll};
+const getRooms = () => {
+
+    return  new Set(users.map(({room}) => {room} ))
+
+    
+
+
+}
+
+module.exports = { addUser, removeUser ,getUser ,getUsersInRoom ,getAll,getRooms};
